@@ -1,9 +1,16 @@
-import Image from 'next/image'
+import Head from "next/head"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      Hello World
-    </main>
+    <div className="bg-black min-h-screen">
+      <Head>
+        <title>Movie Database</title>
+        <meta name="description" content="A simple movie database for users" />
+      </Head>
+      <main className="container mx-auto py-10 px-4 flex flex-col items-center justify-center">
+        <h1 className="text-4x1 font-bold mb-8 text-white">Movie Database</h1>
+        
+      </main>
+    </div>
   )
 }
