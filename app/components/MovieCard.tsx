@@ -8,7 +8,7 @@ interface MovieCardProps {
 export const MovieCard = ({title, overview, posterPath}: MovieCardProps) => {
 
     const imageUrl = posterPath ?
-    `https://image>tmdb.org/t/p/w500${posterPath}`
+    `https://image.tmdb.org/t/p/w500${posterPath}`
     :
     `/no-image-available.png`;
 
